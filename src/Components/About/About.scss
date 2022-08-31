@@ -1,0 +1,38 @@
+.about{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    
+    font-family: 'Ubuntu', sans-serif;
+    
+    .image{
+        width: 50vw;
+        background: url(../../../public/assets/ppic4.jpg);
+        background-size: cover;
+    }
+
+    .text{
+        width: 50vw;
+        color: white;
+        background: #191A19;
+        text-align: justify;
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 18px;
+
+        .heading {
+            font-size: 65px;
+            margin-bottom:  35px;
+        }
+
+        .tech{
+            margin-top: 20px;
+            .sub {
+                font-size: 35px;
+                margin-bottom: 15px;
+            }
+        }
+        
+    }
+}

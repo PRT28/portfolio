@@ -1,0 +1,38 @@
+.hero{
+    background-color: #1363DF !important;
+    background: url(../../../public/assets/future-grid.webp);
+    background-size:cover ;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 6px;
+    z-index: -1;
+
+    .hero-text{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .name{
+            font-size: 75px;
+            margin-bottom: 15px;
+            margin-top: 7px;
+        }
+
+        .dynamic {
+            font-size: 30px;
+        }
+    }
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }

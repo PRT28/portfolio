@@ -1,0 +1,100 @@
+.projects{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: white;
+    background-color: #191A19;
+    overflow: hidden;
+
+    .text{
+        width: 50vw;
+        padding: 16px;
+        padding-top: 90px;
+        overflow-y: scroll;
+        box-sizing: content-box;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;
+        .heading{
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+
+        a {
+            color: #ECDBBA;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+          }
+          a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #ECDBBA;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          a:hover:after { 
+            width: 100%; 
+            left: 0; 
+          }
+    }
+    .text::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    .anim{
+        width: 50vw;
+        position: relative;
+        background-color: #ECDBBA;
+    }
+}
+
+
+.folder {
+    color: black;
+    background-color: #ECDBBA;
+    border-radius: 7px;
+    padding: 16px;
+    margin-bottom:10px ;
+
+    .name{
+        padding: 16px;
+    }
+
+    .hr{
+        height: 1px;
+        width: 90%;
+        background-color: gray;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .desc{
+        font-size: 17px;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .tech{
+        font-size: 17px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .ico{
+        cursor:pointer;
+    }
+
+    .ico:hover {
+        color: rgb(20, 150, 226);
+    }
+}

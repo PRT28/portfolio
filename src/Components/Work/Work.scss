@@ -1,0 +1,51 @@
+.work{
+    background: #191A19;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+
+    .heading {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .container{
+        .head{
+            font-size: 30px;
+            margin-bottom: 10px;
+
+            a {
+                color: #e1e0ff;
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+              }
+              a:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: #e1e0ff;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+              }
+              a:hover:after { 
+                width: 100%; 
+                left: 0; 
+              }
+        }
+
+        .sub{
+            font-size: 19px;
+            margin-bottom: 15px;
+        }
+
+        li{
+            margin-bottom: 5px;
+        }
+    }
+}
